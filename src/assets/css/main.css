@@ -434,9 +434,6 @@ Hero
 .hero-img-svg {
   display: none;
 }
-.hero-img {
-  display: none;
-}
 .hero-info h4 {
   color: var(--clr-grey-5);
 }
@@ -471,7 +468,7 @@ Hero
   .hero-img {
     display: block;
     grid-row: 1/1;
-    grid-column: 7/-1;
+    grid-column: 8/-1;
   }
   .hero-img-svg {
     width: 100%;
