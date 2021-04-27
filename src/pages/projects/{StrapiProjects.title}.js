@@ -1,21 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-const ProjectTemplate = ({ data }) => {
-  const {
-    title,
-    github,
-    featured,
-    description,
-    slug,
-    url,
-    stack,
-    image,
-  } = data.strapiProjects
-
+const ProjectTemplate = ({ pageContext: { title }, data }) => {
   return (
     <div>
-      <h4>{title}</h4>
+      <main className="project-template-page">
+        <h2>{title}</h2>
+        <p>{data.strapiProjects.description}</p>
+      </main>
     </div>
   )
 }
