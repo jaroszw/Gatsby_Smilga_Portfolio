@@ -9,13 +9,12 @@ const ProjectsPage = ({ data }) => {
 
   return (
     <>
-      <>
-        <main>
-          <section className="project-page">
-            <Projects projects={projects} title="all project" />
-          </section>
-        </main>
-      </>
+      <Seo title="Projects" />
+      <main>
+        <section className="project-page">
+          <Projects projects={projects} title="all project" />
+        </section>
+      </main>
     </>
   )
 }

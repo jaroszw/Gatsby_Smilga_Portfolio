@@ -8,17 +8,17 @@ import "../assets/css/main.css"
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const toggleSidebar = () => {
+  function toggleSidebar() {
     setIsOpen(!isOpen)
   }
 
   return (
-    <>
+    <div>
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       {children}
       <Footer />
-    </>
+    </div>
   )
 }
 export default Layout

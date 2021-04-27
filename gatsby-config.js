@@ -1,12 +1,13 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-
+  siteMetadata: {
+    title: `WebDev Portfolio`,
+    description: `Awesome WebDev Portfolio built with Gatsby and Strapi`,
+    titleTemplate: `%s | WebDev Portfolio`,
+    url: `https://portfolio-gatsby-smilga.netlify.app`,
+    twitterUsername: `@johnjohn`,
+    image: `/mainimg.png`,
+    
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

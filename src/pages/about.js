@@ -10,6 +10,7 @@ const About = ({ data }) => {
 
   return (
     <>
+      <Seo title="About" />
       <section>
         <div className="section-center about-center">
           <img src={image.publicURL} alt={title} className="about-img-svg" />
